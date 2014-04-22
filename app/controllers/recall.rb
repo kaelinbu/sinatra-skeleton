@@ -1,5 +1,5 @@
 get '/' do
-  @notes = Note.all :order => :id.desc
+  @notes = Note.all
   @title = 'All Notes'
   erb :home
 end
